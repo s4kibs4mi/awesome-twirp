@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package pdefs;
 
-option go_package = "pdefs";
+option go_package = "github.com/s4kibs4mi/awesome-twirp/protobuf/pdefs";
 
 import "protobuf/pdefs/hello.proto";
 import "protobuf/pdefs/bye.proto";
