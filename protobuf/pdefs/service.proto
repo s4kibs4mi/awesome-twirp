@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package pdefs;
+
+option go_package = "pdefs";
+
+import "protobuf/pdefs/hello.proto";
+import "protobuf/pdefs/bye.proto";
+
+service AwesomeTwirpService {
+    rpc SayHello (ReqHello) returns (ResHello);
+}
+
+message ReqHello {
+    Hello Hello = 1;
+}
+
+message ResHello {
+    GoodBye GoodBye = 1;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package pdefs;
+
+option go_package = "pdefs";
+
+message GoodBye {
+    string UserID = 1;
+    string Message = 2;
+}
